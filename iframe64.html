@@ -14,6 +14,8 @@
 
   <script>
     // берём любое изображение
+    window.onload = function() {
+    
     let img = document.querySelector('img');
 
     // создаём <canvas> того же размера
@@ -39,6 +41,7 @@
       // удаляем внутреннюю ссылку на Blob, что позволит браузеру очистить память
       URL.revokeObjectURL(link.href);
     }, 'image/png');
+  }
   </script>
 </body>
 
