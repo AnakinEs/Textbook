@@ -11,7 +11,7 @@
   <script>
 
     async function f() {
-      let response = await fetch('/article/fetch/logo-fetch.svg');
+      let response = await fetch('https://resources.whatwg.org/logo-fetch.svg');
 
       let blob = await response.blob(); // скачиваем как Blob-объект
 
